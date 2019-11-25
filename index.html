@@ -11,64 +11,87 @@
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Sans+JP&display=swap" rel="stylesheet">
 </head>
 <body>
+  <ul class="skip-links">
+    <li><a href="#main">Jump to main content</a></li>
+    <li><a href="#nav">Jump to navigation</a></li>
+  </ul>
   <header role="banner">
-    <div class="grid gutter-1-4 pad-t-1-8">
-      <div class="unit xs-1 m-1 l-1-2 ">
-        <h1 class="push-0 jp"><i lang="ja">枯山水</i></h1>
-        <h2 class="peta eng push-0">Rock Gardens</h2>
+    <div class="grid gutter-1-2 pad-t-1-2">
+      <div class="unit xs-1 m-1 l-1-2 text-center">
+        <h1 class="push-0 not-italic jp zetta"><i lang="ja">枯山水</i></h1>
+        <h2 class="mega not-italic eng push-0 pad-b-1-2">Rock Gardens</h2>
       </div>
-      <nav class="unit xs-1 m-1 l-1-2">
-        <ul class="pad-t text-right push-none pad-b-1-8 list-group">
-          <li class="btn mega"><a href="#">Viewing</a></li>
-          <li class="btn mega"><a href="#">Gravel</a></li>
-          <li class="btn mega"><a href="#">Symbolism</a></li>
+      <nav class="unit xs-1 m-1 l-1-2" role="navigation" id="nav">
+        <ul class=" text-center pad-b push-0 list-group">
+          <li class="btn clicker kilo"><a href="#">Viewing</a></li>
+          <li class="btn clicker kilo"><a href="#">Gravel</a></li>
+          <li class="btn clicker kilo"><a href="#">Symbolism</a></li>
         </ul>
       </nav>
     </div>
     <img src="images/banner.svg" alt="" class="img-flex push">
   </header>
-  <main>
-  <article class="pad-b-1-24">
-    <div class="pad-t">
-      <hr>
-    </div>
-    <div class="wrapper gutter-1-2">
-      <h2 class="text-center nina push-none">自然の親密な本質を模倣し、人生の真の意味を発見する。</h2>
-      <h2 class="kilo eng gutter-2 text-center pad-t-1-2">Imitate the intimate essence of nature & discover the true meaning of life.</h2>
-    </div>
-    <div class="pad-b-1-4">
-      <hr>
-    </div>
-  </article>
-  <div class="grid">
-    <div class=" pad-b">
-      <hr>
-    </div>
-      <div class="unit xs-1-3 s-1-3 m-1-2 l-1-3">
-        <img class="viewing" src="images/viewing.svg" alt="">
-        <h3>閲覧</h3>
-        <p>Viewing</p>
-        <p>A zen garden is usually relatively small, surrounded by a wall, and is often meant to be seen while seated from a single viewpoint outside the garden, such as the porch of the hojo</p>
-        <a class="btn" href="#">Learn more about Viewings</a>
+  <main role="main" id="main">
+    <article class="pad-b-1-2">
+      <div class="pad-t">
+        <hr>
       </div>
-      <div class="unit xs-1-3 s-1-3 m-1-2 l-1-3">
-        <img class="gravel" src="images/gravel.svg" alt="">
-        <h3>砂利</h3>
-        <p>Gravel</p>
-        <p>Gravel is usually used in zen gardens because it is less disturbed by rain and wind; Shirakawa, which is a black-speckled granite from Kyoto, was prized for its ability to hold grooves</p>
-        <a class="btn" href="#">Learn more about Viewings</a>
+      <div class="wrapper gutter">
+        <h2 class="text-center jp yotta push-0">自然の親密な本質を模倣し、人生の真の意味を発見する。</h2>
+        <h2 class="mega eng gutter-2 push-0 text-center pad-t-1-2">Imitate the intimate essence of nature & discover the true meaning of life.</h2>
       </div>
-      <div class="unit xs-1-3 s-1-3 m-1-2 l-1-3">
-        <img class="symbolism" src="images/symbolism.svg" alt="">
-        <h3>象徴主義</h3>Symbolism
-        <p>In the Japanese rock garden, rocks sometimes symbolize mountains (particularly Horai or they can be boats or a living creature, usually a turtle, or a carp</p>
-        <a class="btn" href="#">Learn more about Viewings</a>
+      <div class="pad-t">
+        <hr>
       </div>
-      <br class="footbreak">
-    </main>
-    <footer class="island" role="contentinfo">
-      <p>© 794 Heian Period</p>
-    </footer>
+    </article>
+    <div class="grid gutter-1-4 grid-stretch">
+      <div class="unit xs-1 m-1-2 l-1-3 island-1-4 pad-b-1-4 unit-content-distribute" id="viewing">
+          <div class="embed embed-3by2 pad-t-1-4">
+            <img class="img-flex pad-b-1-4 embed-item" src="images/viewing.svg" alt="">
+          </div>
+          <div class="pad-t-1-4 pad-b-1-2">
+            <h2 class="jp exa push-0">閲覧</h2>
+            <div class="mega eng push-0 pad-b-1-2">Viewing</div>
+            <p>A zen garden is usually relatively small, surrounded by a wall, and is often meant to be seen while seated from a single viewpoint outside the garden, such as the porch of the hojo</p>
+            <a class="btn" href="#">Learn more about Viewings</a>
+          </div>
+
+      </div>
+      <div class="unit xs-1 m-1-2 l-1-3 pad-b-1-4 unit-content-distribute" id="gravel">
+        <div class="island-1-4">
+          <div class="embed embed-3by2 pad-b-1-4">
+            <img class="gravel embed-item" src="images/gravel.svg" alt="">
+          </div>
+          <div class="pad-t-1-4 pad-b-1-2">
+            <h2>砂利</h2>
+            <h2>Gravel</h2>
+            <p>Gravel is usually used in zen gardens because it is less disturbed by rain and wind; Shirakawa, which is a black-speckled granite from Kyoto, was prized for its ability to hold grooves</p>
+            <a class="btn" href="#">Learn more about Viewings</a>
+          </div>
+        </div>
+      </div>
+      <div class="unit unit-xs-1 unit-m-1 unit-l-1-3 pad-t-1-4 pad-b push unit-content-distribute">
+        <div class="grid">
+          <div class="unit xs-1 m-2-3 l-1">
+            <div class="embed embed-3by2">
+              <img class="img-flex pad-b-1-4 island-1-4 embed-item" src="images/symbolism.svg" alt="">
+            </div>
+          </div>
+          <div class="unit xs-1 m-1-3 l-1 island-1-4 pad-b-1-2 pad-t-1-4">
+            <h2 class="jp exa push-0">象徴主義</h2>
+            <h2 class="mega eng push-0 pad-b-1-2">Symbolism</h2>
+            <p>In the Japanese rock garden, rocks sometimes symbolize mountains (particularly Horai or they can be boats or a living creature, usually a turtle, or a carp</p>
+            <a class="btn" href="#">Learn more about Viewings</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <div>
+    <hr class="push-0">
   </div>
+  <footer class="island-1-2" role="contentinfo">
+    <small>© 794 Heian Period</small>
+  </footer>
 </body>
 </html>
